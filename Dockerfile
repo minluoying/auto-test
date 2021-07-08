@@ -5,6 +5,6 @@ RUN apt-get update \
 
 RUN pip install ansible && pip install requests && pip install PyVmomi
 
-RUN touch /etc/ansible/ansible.cfg && touch /etc/ansible/hosts
+RUN cat /etc/ansible/ansible.cfg && cat /etc/ansible/hosts
 
 WORKDIR /root
